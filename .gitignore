@@ -1,0 +1,28 @@
+# --- review-only artifacts: not published ---
+_MANIFEST.md
+
+# --- the edge: never commit ---
+*weights*.csv
+*live*.csv
+weights/
+/private/
+*_params.*
+param_search/
+*optimization*
+
+# --- account / notional ---
+*GBM*
+*notional*
+*balance*
+*positions*
+*fills*
+
+# --- scratch ---
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/

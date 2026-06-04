@@ -1,0 +1,12 @@
+period,equity_index,benchmark_index
+0,100.0,100.0
+1,103.1,101.8
+2,106.4,103.2
+3,104.9,101.0
+4,110.2,104.5
+5,115.6,108.1
+6,112.3,103.7
+7,119.8,109.9
+8,126.4,114.2
+9,131.0,117.6
+# normalized to 100 at period 0; periods are abstract, not real dates; placeholder values
