@@ -1,17 +1,14 @@
 # Design decisions
 
-Each decision is published as a *choice and its trade-off*, without the numeric
-setting that implements it.
+Each choice as backtested and published, with its trade-off.
 
-| Decision | Choice | Trade-off | Published? |
-|---|---|---|---|
-| Drift control | tolerance bands, not calendar rebalance | lower turnover vs slower mean-reversion | choice yes, band width **no** |
-| Universe | liquid, broad asset classes | breadth vs depth | yes |
-| Risk ceiling | per-asset caps | discipline vs upside capture | choice yes, cap level **no** |
-| Cost model | net + screen before trade | realism vs simplicity | yes |
-| Review cadence | infrequent, rule-triggered | stability vs responsiveness | yes |
+| Decision | Choice | Trade-off |
+|---|---|---|
+| Sleeve weights | Fixed 50/30/20 | Simple and stable. The vector was inherited from an earlier regime-conditional allocator chosen on the same data, a latent selection bias the report discloses. |
+| Rebalancing | Monthly, at month-end, back to 50/30/20 | Low turnover and little timing noise. Costs are embedded, and a +50% cost shock lowers the Sharpe ratio¹ only from 1.33 to 1.28. |
+| Regime gating | None | One fewer moving part. The gated predecessor (Ensemble #14) had a lower Sharpe ratio¹ (1.26 vs 1.33) and a deeper maximum drawdown (−4.91% vs −3.92%) over the same window. |
+| Kill switch | None in the backtest | Nothing to verify or tune; the sleeves' own trend filters do the defending in stress. |
+| Instruments | SPY, QQQ, EFA, IEF, GLD, XAUUSD | Liquid ETFs and gold; no single-asset bet. |
+| Position sizing | 1% fixed-fractional risk per trade inside the active sleeves | Ratios do not depend on account size; the published returns are unlevered. |
 
-The pattern: the *type* of decision and its reasoning are public; the *number* that
-operationalizes it is private, because the number is the position.
-
-> Placeholder draft.
+¹ Return ÷ volatility with no risk-free rate subtracted, as published (see the README).

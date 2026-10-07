@@ -1,23 +1,15 @@
-# --- review-only artifacts: not published ---
+# Local review notes: never published
 _MANIFEST.md
 
-# --- the edge: never commit ---
-*weights*.csv
-*live*.csv
-weights/
-/private/
-*_params.*
-param_search/
-*optimization*
+# Private or working files never belong in this repository
+private/
+*.xlsx
+*.xls
+*.parquet
+*.pkl
+.env
 
-# --- account / notional ---
-*GBM*
-*notional*
-*balance*
-*positions*
-*fills*
-
-# --- scratch ---
+# Scratch
 *.tmp
 *.bak
 .DS_Store
