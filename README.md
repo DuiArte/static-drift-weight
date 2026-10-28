@@ -62,7 +62,7 @@ blends of correlated sleeves.
   the survival bar and sleeve attribution to walk-forward, cost shock, the 2008 test and the
   gold-dependence check.
 - [`SOURCE.md`](SOURCE.md): the public site outputs this repository is generated from.
-- [`data/oos_replay.csv`](data/oos_replay.csv): the out-of-sample replay series the site publishes (125 rows, 2026-04-30 → 2026-10-27).
+- [`data/oos_replay.csv`](data/oos_replay.csv): the out-of-sample replay series the site publishes (126 rows, 2026-04-30 → 2026-10-28).
 
 ## License
 
