@@ -10,9 +10,9 @@ next run.
 
 | Public output | What it provides | As of | Version |
 |---|---|---|---|
-| [`docs/bt_static_drift_weights.html`](https://duiarte.github.io/ltcma/bt_static_drift_weights.html) | thesis facts, headline metrics, survival bar, attribution, walk-forward, cost shock, caveats | report dated 2026-05-30 | `blob:5b88b7b4cc3f` |
+| [`docs/bt_static_drift_weights.html`](https://duiarte.github.io/ltcma/bt_static_drift_weights.html) | thesis facts, headline metrics, survival bar, attribution, walk-forward, cost shock, caveats | report dated 2026-05-30 | `blob:d1853b826ecb` |
 | [`data/backtests_strategies.json`](https://github.com/DuiArte/ltcma/blob/main/data/backtests_strategies.json) | catalog entry `static_drift_weights`: specification, verdict, 2008 test, gold check | catalog updated 2026-10-07 | `blob:f01a0079db5c` |
-| [`data/bt_replay/static_drift_weights.json`](https://github.com/DuiArte/ltcma/blob/main/data/bt_replay/static_drift_weights.json) | out-of-sample replay series | 2026-11-25 | `blob:7acc8ab76dc6` |
+| [`data/bt_replay/static_drift_weights.json`](https://github.com/DuiArte/ltcma/blob/main/data/bt_replay/static_drift_weights.json) | out-of-sample replay series | 2026-11-27 | `blob:d1d4b961ecf2` |
 
 *Version* is the file's git blob id in the site repository, so the exact input can be
 checked with `git cat-file -p <id>` in a clone of https://github.com/DuiArte/ltcma.
